@@ -1,0 +1,73 @@
+{
+    "parser": "babel-eslint",
+    "root": true,
+    "plugins": [
+        "react"
+    ],
+    "extends": [
+        "eslint:recommended"
+    ],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "strict": 0,
+        "eqeqeq": 1,
+        "no-console": 1,
+        "no-use-before-define": [
+            2,
+            "nofunc"
+        ],
+        "no-trailing-spaces": 1,
+        "space-before-function-paren": [
+            1,
+            {
+                "anonymous": "always",
+                "named": "never"
+            }
+        ],
+        "no-unused-vars": [
+            1,
+            {
+                "vars": "all",
+                "args": "after-used",
+                "argsIgnorePattern": "(^_|^next$)"
+            }
+        ],
+        "keyword-spacing": [
+            1,
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "space-before-blocks": 1,
+        "arrow-parens": [
+            1,
+            "always"
+        ],
+        "object-curly-spacing": [
+            1,
+            "always"
+        ],
+        // Change priorities from 2 error to 1 warn:
+        "no-extra-semi": 1,
+        "comma-dangle": 1,
+        // Other:
+        "no-dupe-keys": 2,
+        "no-dupe-args": 2,
+        "react/jsx-no-duplicate-props": 2,
+        "react/jsx-uses-vars": 2
+    },
+    "globals": {
+        "process": true
+    }
+}

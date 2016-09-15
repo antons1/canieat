@@ -1,0 +1,36 @@
+{
+  "name": "canieat",
+  "version": "0.0.1",
+  "description": "App to keep track of what food you have",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "webpack:watch": "webpack --watch --progress --colors",
+    "server": "http-server"
+  },
+  "keywords": [
+    "food",
+    "tracker",
+    "organise"
+  ],
+  "author": "Håkon Antonsen",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1",
+    "eslint": "^3.2.2",
+    "eslint-plugin-react": "^6.0.0",
+    "nodemon": "^1.10.0",
+    "parallelshell": "^2.0.0",
+    "webpack": "^1.13.1"
+  }
+}
