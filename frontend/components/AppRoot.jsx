@@ -1,8 +1,14 @@
 const React = require('react');
+const FoodList = require('./FoodList');
+const Header = require('./Header');
+
+
+const hardcodedfood = require('../hardcodedfood');
 
 const AppRoot = (props) =>
     <div>
-        <h1>Hello world</h1>
+        <Header />
+        <FoodList food={hardcodedfood} />
     </div>;
 
 
