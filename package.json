@@ -4,9 +4,12 @@
   "description": "App to keep track of what food you have",
   "main": "index.js",
   "scripts": {
+    "less": "lessc ./frontend/css/main.less ./public/main.css",
+    "less:watch": "nodemon --exec \"npm run less\" -e less",
     "webpack": "webpack",
     "webpack:watch": "webpack --watch --progress --colors",
-    "server": "http-server"
+    "server": "http-server",
+    "develop": "parallelshell \"npm run webpack:watch\" \"npm run server\" \"npm run less:watch\""
   },
   "keywords": [
     "food",
@@ -16,6 +19,7 @@
   "author": "Håkon Antonsen",
   "license": "ISC",
   "dependencies": {
+    "class-names": "^1.0.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"
   },
@@ -29,6 +33,7 @@
     "babel-preset-react": "^6.11.1",
     "eslint": "^3.2.2",
     "eslint-plugin-react": "^6.0.0",
+    "less": "^2.7.1",
     "nodemon": "^1.10.0",
     "parallelshell": "^2.0.0",
     "webpack": "^1.13.1"
