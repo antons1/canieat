@@ -3,6 +3,7 @@ node_modules
 
 #web
 public/bundle.js
+public/main.css
 
 #security
 secure/
